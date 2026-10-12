@@ -68,7 +68,7 @@ src/
 
 Cloudflare Workers static assets (Worker `garmin-meater`, see `wrangler.jsonc`). GitHub Actions run check + tests +
 build on every push and PR; pushes to `main` run `wrangler deploy`, and same-repo PRs get a preview URL comment.
-The workflow needs the `CLOUDFLARE_API_TOKEN` and `CLOUDFLARE_ACCOUNT_ID` repository secrets.
+The workflow uses the nepoteidea org-level `CLOUDFLARE_API_TOKEN` secret and `CLOUDFLARE_ACCOUNT_ID` variable.
 
 ---
 
