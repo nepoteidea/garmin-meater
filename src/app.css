@@ -1,0 +1,70 @@
+@import '@fontsource/barlow/400.css';
+@import '@fontsource/barlow/500.css';
+@import '@fontsource/barlow/600.css';
+@import '@fontsource/barlow-condensed/600.css';
+@import '@fontsource/barlow-condensed/700.css';
+
+/* Tokens from the "Garmin Meater designs" canvas (Tokens artboard). */
+:root {
+  --page-bg: #0b0b0b;
+  --panel: #161616;
+  --panel-raised: #2a2a2a;
+
+  --black: #000;
+  --focus: #1a1a1a;
+  --line: #333;
+  --track: #1f1f1f;
+  --muted: #a3a3a3;
+  --dim: #6b6b6b;
+  --text: #fff;
+
+  --estimating: #8a8a8a;
+  --cooking: #ff8a1f;
+  --remove: #ff5a36;
+  --resting: #4da3ff;
+  --ready: #3ddc84;
+
+  --font: 'Barlow', system-ui, sans-serif;
+  --font-num: 'Barlow Condensed', 'Barlow', system-ui, sans-serif;
+
+  color-scheme: dark;
+  font-family: var(--font);
+  line-height: normal;
+  color: var(--text);
+  background: var(--page-bg);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  min-height: 100dvh;
+  background: var(--page-bg);
+  overflow-x: hidden;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid var(--cooking);
+  outline-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+  }
+}
